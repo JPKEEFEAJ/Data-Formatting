@@ -12,7 +12,7 @@ namespace DataFormatting.Models
         [DisplayName("GPA")]
         public double StudentGradePointAverage { get; set; }
         [DisplayName("Join Date")]
-        public DateOnly StudentJoinDate { get; set; }
+        public string StudentJoinDate { get; set; }
         [DisplayName("Active")]
         public Boolean StudentActive { get; set; }
     }

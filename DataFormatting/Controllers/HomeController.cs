@@ -31,7 +31,7 @@ namespace DataFormatting.Controllers
                     StudentName = values[1],
                     StudentAge = Convert.ToInt32(values[2]),
                     StudentGradePointAverage = Convert.ToDouble(values[3]),
-                    StudentJoinDate = DateOnly.Parse(values[4]),
+                    StudentJoinDate = DateOnly.Parse(values[4]).ToString("MMMM dd, yyyy"),
                     StudentActive = Convert.ToBoolean(values[5])
                 };
                 if (student.StudentActive)
