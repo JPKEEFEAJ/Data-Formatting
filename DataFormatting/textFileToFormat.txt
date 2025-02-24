@@ -1,0 +1,21 @@
+ID, Name, Age, GPA, JoinDate, Active
+1, John Doe, 20, 3.5, 2021-09-01, True
+2, Jane Smith, 22, 3.8, 2020-08-15, False
+3, Emily Johnson, 19, 3.4, 2022-01-20, True
+4, Michael Brown, 21, 3.7, 2021-11-30, True
+5, Sarah Davis, 23, 3.9, 2019-12-10, False
+6, David Lee, 20, 3.2, 2022-03-01, True
+7, Laura Wilson, 22, 3.6, 2020-10-05, True
+8, James Miller, 21, 2.9, 2021-07-12, False
+9, Olivia Moore, 19, 3.3, 2022-02-17, True
+10, Daniel Harris, 24, 3.1, 2018-06-25, True
+11, Sophia Clark, 22, 3.8, 2020-05-15, False
+12, William Lewis, 23, 2.7, 2019-11-21, True
+13, Ava Walker, 20, 3.5, 2021-04-03, True
+14, Ethan Young, 21, 3.6, 2021-08-22, False
+15, Mia Scott, 22, 3.9, 2020-02-19, True
+16, Alexander King, 19, 3.1, 2022-01-30, False
+17, Isabella Green, 23, 3.4, 2019-10-09, True
+18, Lucas Adams, 21, 2.8, 2021-11-17, True
+19, Charlotte Baker, 22, 3.7, 2020-03-22, False
+20, Mason Nelson, 20, 3.0, 2021-05-14, True

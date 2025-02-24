@@ -1,0 +1,86 @@
+﻿@model DataFormatting.Models.StudentData
+
+<h1 class="text-center">Student Data</h1>
+<br />
+<h2>Active Students</h2>
+<h6>Average Age: @Html.DisplayFor(model => model.AverageActiveAge)</h6>
+<h6>Average GPA: @Html.DisplayFor(model => model.AverageActiveGPA)</h6>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ActiveStudents.First().StudentName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ActiveStudents.First().StudentAge)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ActiveStudents.First().StudentGradePointAverage)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ActiveStudents.First().StudentJoinDate)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.ActiveStudents) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.StudentName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.StudentAge)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.StudentGradePointAverage)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.StudentJoinDate)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<br />
+<h2>Inactive Students</h2>
+<h6>Average Age: @Html.DisplayFor(model => model.AverageInactiveAge)</h6>
+<h6>Average GPA: @Html.DisplayFor(model => model.AverageInactiveGPA)</h6>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.InactiveStudents.First().StudentName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InactiveStudents.First().StudentAge)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InactiveStudents.First().StudentGradePointAverage)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InactiveStudents.First().StudentJoinDate)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.InactiveStudents)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.StudentName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.StudentAge)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.StudentGradePointAverage)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.StudentJoinDate)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
